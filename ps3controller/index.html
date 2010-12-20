@@ -1,0 +1,69 @@
+<html>  
+    <head>  
+        <title>MacRuby Demo</title>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/raphael.js"></script>  
+        <script type="text/javascript" src="js/demo.js"></script>
+        <style type="text/css">  
+           div.playground { 
+             background-image: url(logo.png);
+             background-repeat: no-repeat;
+             background-position: left top;
+            }
+            div.playground{
+              float: left;
+            }
+            #canvas_container {  
+                background-color: rgba(255, 255, 255, 0.7);
+                clear: both;
+                width: 500px;  
+                border: 1px solid #aaa;  
+                opacity: 1;
+            }
+            #joysticks{
+              width: 502px;
+              opacity: 1;
+            }
+            #joystick-left {
+                width: 140px;
+                float: left;
+                height: 140px;
+                border: 1px dotted #aaa;
+                margin: 2px 10px 10px 2px;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+            #joystick-right {
+                width: 140px;
+                float: right;
+                height: 140px;
+                border: 1px dotted #aaa;
+                margin: 2px 2px 10px 0px;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+            #joystick-log{
+              clear: both;
+              width: 500px;
+              border: 1px solid #aaa;
+              height: 40px;
+              margin-bottom: 1em;
+            }
+            #debug{
+              clear: both;
+              width: 500px;
+              border: 1px solid #aaa;
+              height: 40px;
+            }
+        </style>  
+    </head>  
+    <body> 
+        <div class='playground'>
+            <div id="canvas_container"></div>
+            <div id='joysticks'>
+              <div id="joystick-left"></div>
+              <div id="joystick-right"></div>
+            </div>
+            <div id="joystick-log"></div>
+            <div id="debug"></div>
+        </div>
+    </body>  
+</html>
