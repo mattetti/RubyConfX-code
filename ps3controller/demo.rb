@@ -2,6 +2,8 @@ framework 'Cocoa'
 framework File.expand_path("PS3Controller.framework")
 framework 'WebKit'
 
+NSApplication.sharedApplication
+
 class ControllerDelegate
 
   attr_reader :controller
